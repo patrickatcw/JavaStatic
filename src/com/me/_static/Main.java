@@ -23,6 +23,10 @@ public class Main {
         /*1st Instance is instance number 1
         2nd instance is instance number 1*/
 
+        //step 7
+        //now go back to class and change
+        //private int numInstances = 0; to static
+
     }
 
 }
