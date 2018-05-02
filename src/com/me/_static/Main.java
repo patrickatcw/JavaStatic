@@ -41,6 +41,8 @@ public class Main {
         2nd instance is instance number 2
         3rd instance is instance number 3*/
 
+        //step 10 go back to class to change getNumInstances to static
+
     }
 
 }

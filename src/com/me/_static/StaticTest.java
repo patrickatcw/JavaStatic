@@ -16,7 +16,8 @@ public class StaticTest {
     }
 
     //step 5 getter for both
-    public int getNumInstances() {
+    //public int getNumInstances() {
+    public static int getNumInstances() { //step 10 changed to a static method, back to main for step 11
         return numInstances;
     }
 
