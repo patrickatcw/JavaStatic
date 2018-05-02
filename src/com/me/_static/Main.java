@@ -27,6 +27,20 @@ public class Main {
         //now go back to class and change
         //private int numInstances = 0; to static
 
+        //step 8 run after step 7 change in statictest class
+        //result;
+        /*1st Instance is instance number 1
+        2nd instance is instance number 2*/
+
+        //step 9 make another instance
+        StaticTest thirdInstance = new StaticTest("3rd instance");
+        System.out.println(thirdInstance.getName() + " is instance number " + thirdInstance.getNumInstances());
+        //run
+        //result;
+        /*1st Instance is instance number 1
+        2nd instance is instance number 2
+        3rd instance is instance number 3*/
+
     }
 
 }
