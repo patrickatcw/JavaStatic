@@ -13,16 +13,15 @@ public class Main {
     public static void main(String[] args) {
 
         //step 6 instances
-        StaticTest firstInstance = new StaticTest("1st Instance");
-        System.out.println(firstInstance.getName() + " is instance number " + firstInstance.getNumInstances());
+//        StaticTest firstInstance = new StaticTest("1st Instance");
+//        System.out.println(firstInstance.getName() + " is instance number " + firstInstance.getNumInstances());
 
-        StaticTest secondInstance = new StaticTest("2nd instance");
-        System.out.println(secondInstance.getName() + " is instance number " + secondInstance.getNumInstances());
+//        StaticTest secondInstance = new StaticTest("2nd instance");
+//        System.out.println(secondInstance.getName() + " is instance number " + secondInstance.getNumInstances());
         //run
-        //result; both are 1????
+
         /*1st Instance is instance number 1
         2nd instance is instance number 1*/
-
         //step 7
         //now go back to class and change
         //private int numInstances = 0; to static
@@ -33,8 +32,8 @@ public class Main {
         2nd instance is instance number 2*/
 
         //step 9 make another instance
-        StaticTest thirdInstance = new StaticTest("3rd instance");
-        System.out.println(thirdInstance.getName() + " is instance number " + thirdInstance.getNumInstances());
+//        StaticTest thirdInstance = new StaticTest("3rd instance");
+//        System.out.println(thirdInstance.getName() + " is instance number " + thirdInstance.getNumInstances());
         //run
         //result;
         /*1st Instance is instance number 1
@@ -43,6 +42,20 @@ public class Main {
 
         //step 10 go back to class to change getNumInstances to static
 
-    }
+        //step 11 changing instance code, note comment instances out above
+        StaticTest firstInstance = new StaticTest("1st Instance");
+        System.out.println(firstInstance.getName() + " is instance number " + StaticTest.getNumInstances());
 
+        StaticTest secondInstance = new StaticTest("2nd instance");
+        System.out.println(secondInstance.getName() + " is instance number " + StaticTest.getNumInstances());
+
+        StaticTest thirdInstance = new StaticTest("3rd instance");
+        System.out.println(thirdInstance.getName() + " is instance number " + StaticTest.getNumInstances());
+
+        //result; same, but code more efficient
+        /*1st Instance is instance number 1
+        2nd instance is instance number 2
+        3rd instance is instance number 3*/
+
+    }
 }
